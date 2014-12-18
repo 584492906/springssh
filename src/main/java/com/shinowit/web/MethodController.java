@@ -28,9 +28,5 @@ public class MethodController {
         return "redirect:/test/query";
     }
 
-    @RequestMapping("/")
-    public String test2() {
 
-        return "s";
-    }
 }
