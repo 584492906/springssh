@@ -1,21 +1,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@taglib prefix="from" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <html>
 <head>
     <title>test</title>
 </head>
 <body>
-<c:forEach items="${stuList}" var="stu">
-    <label>学号:</label>${stu.stuId}
-    <label>姓名:</label>${stu.stuName}
-    </br>
-</c:forEach>
-<form action="/method/method2/" method="post">
-    ${s}
-    <input type="text" name="stuname"/>
-    <input type="text" name="userpass"/>
+<form:form modelAttribute="user" action="${cxt}/valid/valid" method="post">
+
+    <form:input path="stuName"/>${stuName}
     <input type="submit"/>
 
-</form>
+</form:form>
 </body>
 </html>

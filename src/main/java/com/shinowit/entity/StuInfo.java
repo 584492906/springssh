@@ -1,6 +1,7 @@
 package com.shinowit.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 
 /**
  * Created by Administrator on 2014/12/16.
@@ -23,6 +24,7 @@ public class StuInfo {
 
     @Basic
     @Column(name = "stu_Name")
+    @Size(min = 3,max = 5)
     public String getStuName() {
         return stuName;
     }

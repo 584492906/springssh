@@ -19,7 +19,7 @@ public class StuInfoController {
     @RequestMapping("/query")
     public ModelAndView queryAll() {
         List<StuInfo> stu_list = dao.listAll(StuInfo.class);
-        ModelAndView result = new ModelAndView("test/query");
+        ModelAndView result = new ModelAndView("test/query1");
         result.addObject("stuList", stu_list);
         return result;
     }
