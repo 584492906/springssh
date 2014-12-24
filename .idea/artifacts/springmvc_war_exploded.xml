@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="springmvc:war exploded">
-    <output-path>$PROJECT_DIR$/target/springssh-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/springmvc_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -54,9 +54,7 @@
           <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.2.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet:javax.servlet-api:3.1.0" />
           <element id="library" level="project" name="Maven: com.googlecode.log4jdbc:log4jdbc:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.2" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="springmvc/web/Web" />
